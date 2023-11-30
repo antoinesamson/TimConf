@@ -1,0 +1,52 @@
+.conferenciers {
+    .cards-conferenciers {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+
+    .card-conferencier {
+        position: relative;
+        margin-bottom: 30px;
+    }
+    .media-conferencier {
+        height: 350px;
+        width: 350px;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .hover-conferencier {
+        text-align: center;
+        background-color: rgba($color: #000000, $alpha: 0.7);
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 350px;
+        width: 350px;
+        padding: 30px;
+        opacity: 0;
+        text-decoration: none;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        .card-conferencier-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            bottom: 30px;
+        }
+
+        .icon {
+            height: 27px;
+            width: 27px;
+        }
+    }
+}

@@ -3,11 +3,19 @@
    ========================================================================== */
 /// Font family
 :root {
-    --font-primary: 'Montserrat', sans-serif;
-    --font-secondary: 'Fira Code', monospace;
+    --font-primary: 'Quantico', sans-serif;
+    --font-secondary: 'Ramaraja', serif;
 
-    --font-size-content: #{typo(16px, 18px)};
+    --font-size-content: #{typo(16px, 16px)};
 
     /// Grosseur des textes
-    --font-size-h1: #{typo(28px, 42px)};
+    --font-size-h1: #{typo(75px, 75px)};
+
+    --font-size-h2: #{typo(48px, 48px)};
+
+    --font-size-h3: #{typo(24px, 24px)};
+
+    --font-size-h4: #{typo(20px, 20px)};
+
+    --font-size-h5: #{typo(18px, 18px)};
 }

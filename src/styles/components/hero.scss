@@ -1,0 +1,22 @@
+.hero {
+    height: 866px;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &::before {
+        content: '';
+        background-image: url(../../assets/images/accueil-hero.jpg);
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        opacity: 0.25;
+    }
+}
+
+.hero-content {
+    position: relative;
+}

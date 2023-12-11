@@ -1,0 +1,21 @@
+.sponsors{
+    text-align: center;
+    background-color: #00876F;
+    padding: 32px 0;
+
+   .icon{
+    height: #{typo(42px, 113px)};;
+    width: auto;
+    }
+    .icon-red{
+        fill: red;
+    }
+
+    .icon-black{
+       color: black;
+    }
+
+    .icon-purple{
+        color: #5A3E85;
+     }
+}

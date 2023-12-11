@@ -1,0 +1,25 @@
+.js-swiper-sponsors{
+    margin-top: 40px;
+    position: relative;
+
+    .swiper-slide{
+        .icon{
+            width: 100%;
+        }
+    }
+}
+
+.shader{
+    height: 113px;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+}
+.left{
+    left: 0;
+}
+
+.right{
+    right: 0;
+}

@@ -1,4 +1,4 @@
-.conferenciers {
+
     .cards-conferenciers {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -41,6 +41,8 @@
             flex-direction: column;
             align-items: center;
             position: absolute;
+            width: 160px;
+            left: calc(50% - 80px);
             bottom: 30px;
         }
 
@@ -49,4 +51,4 @@
             width: 27px;
         }
     }
-}
+

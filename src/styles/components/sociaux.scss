@@ -1,0 +1,47 @@
+.sociaux {
+    ul {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        gap: 32px;
+    }
+    a {
+        height: 24px;
+        width: 24px;
+        background-color: rgba($color: #ffffff, $alpha: 0.2);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 16px;
+
+        &:hover {
+            color: var(--color-black);
+            background-color: var(--color-white);
+        }
+    }
+
+    .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.sociaux-conferencier {
+    list-style: none;
+    a {
+        height: 38px;
+        width: 38px;
+        background-color: var(--color-white);
+        padding: 9px;
+        border-radius: 50%;
+        color: var(--color-bg-primary);
+        font-size: 20px;
+
+        &:hover {
+            background-color: var(--color-bg-secondary);
+            color: var(--color-white);
+        }
+    }
+}

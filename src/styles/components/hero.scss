@@ -20,3 +20,13 @@
 .hero-content {
     position: relative;
 }
+
+.hero-conferencier {
+    height: #{typo(300px, 500px)};
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}

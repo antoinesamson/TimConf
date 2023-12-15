@@ -1,0 +1,46 @@
+.infos-conferencier {
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 95px;
+        padding: 86px 0;
+    }
+}
+
+.card-conference {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 28px;
+    .icon {
+        font-size: 64px;
+    }
+}
+
+.sociaux-et-photos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    .sociaux-conferencier {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .photos-conferencier {
+        margin-top: 52px;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        gap: 20px;
+        width: #{typo(375px, 542px)};
+        height: #{typo(375px, 710px)};
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}

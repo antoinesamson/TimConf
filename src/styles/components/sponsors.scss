@@ -7,6 +7,7 @@
     height: #{typo(116px, 76px)};
     width: auto;
     align-self: center;
+
     }
     .icon-red{
         fill: red;
@@ -24,6 +25,9 @@
 .grid-sponsors{
     display: none;
 
+    .icon{
+        margin-bottom: 25px;
+        }
     
 }
 
@@ -34,6 +38,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 15px;
+
         .icon-column1{
             grid-column-start: 1;
         }

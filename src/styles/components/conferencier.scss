@@ -1,10 +1,23 @@
+
+
 .infos-conferencier {
+
     .wrapper {
         display: flex;
         justify-content: center;
         gap: 95px;
         padding: 86px 0;
+        position: relative;
+        top: -90px;
     }
+}
+
+.contenu-conferencier{
+    background-color: var(--color-bg-primary);
+    width: 540px;
+    padding: 45px 30px;
+    position: relative;
+    top: -90px;
 }
 
 .card-conference {
@@ -15,6 +28,13 @@
     .icon {
         font-size: 64px;
     }
+    a{
+        transition: all 0.3s ease-out;
+
+        &:hover{
+            color: var(--color-bg-secondary);
+        }
+    }
 }
 
 .sociaux-et-photos {
@@ -22,6 +42,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+    grid-column-start: 3;
+    padding: 50px 0;
 
     .sociaux-conferencier {
         display: flex;
@@ -32,15 +54,34 @@
     .photos-conferencier {
         margin-top: 52px;
         display: grid;
-        grid-template-columns: 2fr 2fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
         gap: 20px;
-        width: #{typo(375px, 542px)};
-        height: #{typo(375px, 710px)};
+        max-width: 540px;
+
 
         img {
-            height: 100%;
+            height: 335px;
             width: 100%;
             object-fit: cover;
         }
+
+        .column1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .column2{
+            grid-column-start: 3;
+            grid-column-end: 5;
+        }
+
+        .column3{
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        .column4{
+            grid-column-start: 2;
+            grid-column-end: 5;
+        }
+
     }
 }

@@ -60,3 +60,31 @@
         }
     }
 
+    .autres-conferenciers{
+
+        img{
+            height: 100%;
+            width: 100%;
+        }
+
+        .card-conferencier{
+            position: relative;
+        }
+        
+        .hover-conferencier{
+            opacity: 1;
+            padding: 20px;
+
+            background-color: var(--color-bg-primary);
+            height: 100px;
+            width: 390px;
+            bottom: 0;
+            right: 0;
+            
+    
+        }
+
+
+
+    }
+

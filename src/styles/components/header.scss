@@ -1,11 +1,43 @@
 header {
     padding: 16px 0;
 
+    @media screen and (max-width: 850px) {
+        a:not(.timconf){
+            display: none;
+        }
+        
+        nav{
+           ul{
+            justify-content: space-between;
+            padding: 0;
+        } 
+    }
+        
+        
+    }
+
     .icon {
         font-size: 128px;
         height: 40px;
     }
     .timconf:hover {
         color: var(--color-bg-secondary);
+    }
+
+    .menu-hotdog{
+       height: 32px;
+       width: 32px;
+       display: none;
+
+       hr{
+        height: 4px;
+        background-color: var(--color-white);
+        margin-top: 4px;
+        margin-bottom: 0;
+    }
+
+    @media screen and (max-width: 850px) {
+     display: block;
+    }
     }
 }

@@ -34,4 +34,24 @@ footer {
         justify-content: space-between;
         align-items: center;
     }
+
+    @media screen and (max-width: 600px) {
+        padding: 60px 0;
+        ul{
+            flex-direction: column;
+            justify-content: center;
+            padding: 0;
+            margin: 30px 0;
+        }
+
+        .credits{
+            
+            flex-direction: column;
+            margin: 30px 0;
+        }
+        .sociaux {
+            flex-direction: row;
+            margin: 30px 0;
+        }
+    }
 }

@@ -7,3 +7,9 @@
     width: calc(100% - var(--spacing-md));
     margin: 0 auto;
 }
+
+@media screen and (max-width: 850px) {
+   .wrapper{
+    padding: 0 30px;
+ }
+}

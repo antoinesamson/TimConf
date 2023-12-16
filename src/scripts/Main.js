@@ -17,7 +17,23 @@ class Main {
     const swiper = new Swiper(document.querySelector('.js-swiper-sponsors'), {
       slidesPerView: 4,
       spaceBetween: 64,
+      loop: true,
     });
   }
+
+
+  initChangeClasse() {
+    var width = document.body.clientWidth;
+    if (width < 650){
+      document.querySelector('swiper-sponsors').classList.remove('js-swiper-sponsors')
+    }
+
+    else if (width > 651){
+      document.querySelector('swiper-sponsors').classList.add('js-swiper-sponsors')
+    }
+  }
+
 }
+
+
 new Main();

@@ -20,9 +20,6 @@ header {
         font-size: 128px;
         height: 40px;
     }
-    .timconf:hover {
-        color: var(--color-bg-secondary);
-    }
 
     .menu-hotdog{
        height: 32px;
@@ -34,10 +31,14 @@ header {
         background-color: var(--color-white);
         margin-top: 4px;
         margin-bottom: 0;
+        }
+
+        @media screen and (max-width: 850px) {
+        display: block;
+        }
+    }
+    a:hover {
+        color: var(--color-bg-secondary);
     }
 
-    @media screen and (max-width: 850px) {
-     display: block;
-    }
-    }
 }

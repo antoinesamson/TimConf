@@ -5,7 +5,7 @@
         gap: 30px;
         justify-items: center;
 
-        @media screen and (max-width: $breakpoint-lg) {
+        @media screen and (max-width: $breakpoint-md) {
             grid-template-columns: 1fr 1fr;
           }
 
@@ -65,34 +65,8 @@
 
     .autres-conferenciers{
 
-        img{
-            height: 100%;
-            width: 100%;
-        }
-
-        .card-conferencier{
-            position: relative;
-        }
-        
-        .hover-conferencier{
-            opacity: 1;
-            padding: 20px;
-
-            background-color: var(--color-bg-primary);
-            height: 100px;
-            width: 390px;
-            bottom: 0;
-            right: 0;
-            
-            .card-conferencier-content {
-                position: absolute;
-                width: 350px;
-                left: 20px;
-                top: 20px;
-            }
-        }
-
-
-
+        padding-bottom: 155px;
     }
+
+    
 

@@ -24,3 +24,93 @@
 .right{
     right: 0;
 }
+
+
+.swiper-conferenciers{
+    height: 698px;
+    
+    @media screen and (max-width: $breakpoint-sm) {
+        height: 554px;
+      }
+    
+    
+    .swiper-slide{
+        height: 698px!important;
+        width: #{typo(370px, 705px, $breakpoint-sm, $breakpoint-lg)}!important;
+        position: relative;
+        
+    }
+
+    .media-conferencier{
+            height: #{typo(290px, 554px)};
+            width: #{typo(375px, 705px, $breakpoint-sm, $breakpoint-lg)};
+    }
+
+    img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+    }
+
+    .card-conferencier{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    }
+        
+    .hover-autre-conferencier{
+
+            padding: 20px;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            background-color: var(--color-bg-primary);
+            height: 100px;
+            width: #{typo(250px, 390px)};
+            bottom: 0;
+            right: 0;
+
+            &:hover{
+                text-decoration: underline;
+            }
+
+            @media screen and (max-width: $breakpoint-sm) {
+                position: initial;
+                justify-content: flex-start;
+              }
+            
+            .card-conferencier-content {
+                text-align: start;
+                padding: 20px;
+
+
+            }
+    }  
+}
+
+.swiper-evenements{
+    height: 700px;
+
+    .img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+
+
+.swiper-pagination-bullet{
+border: 3px solid var(--color-bg-secondary);
+height: 18px;
+width: 18px;
+opacity: 1;
+background-color: transparent;
+margin-left: 15px!important;
+}
+
+.swiper-pagination-bullet-active{
+background-color: var(--color-bg-secondary);
+}

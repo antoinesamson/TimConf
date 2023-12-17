@@ -10,6 +10,8 @@ class Main {
     Icons.load();
 
     this.initSwiperSponsors();
+    this.initSwiperEvenements();
+    this.initSwiperAutresConferenciers();
   }
 
   initSwiperSponsors() {
@@ -21,17 +23,48 @@ class Main {
     });
   }
 
+initSwiperEvenements() {
+  const target = document.querySelector('.js-swiper-evenements');
+  const swiper = new Swiper(
+    document.querySelector('.js-swiper-evenements'),
+    {}
+  );
 
-  initChangeClasse() {
-    var width = document.body.clientWidth;
-    if (width < 650){
-      document.querySelector('swiper-sponsors').classList.remove('js-swiper-sponsors')
-    }
-
-    else if (width > 651){
-      document.querySelector('swiper-sponsors').classList.add('js-swiper-sponsors')
-    }
+  if (target) {
+    const swiper = new Swiper(target, {
+      pagination: {
+        el: target.querySelector('.pagination-evenements'),
+      },
+    });
   }
+}
+
+initSwiperAutresConferenciers() {
+  const target = document.querySelector('.js-swiper-conferenciers');
+  const swiper = new Swiper(
+    document.querySelector('.js-swiper-conferenciers'),
+    {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      loop: true,
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30
+        }
+      }
+    }
+  );
+
+  if (target) {
+    const swiper = new Swiper(target, {
+      pagination: {
+        el: target.querySelector('.pagination-conferenciers'),
+      },
+    });
+  }
+}
+
 
 }
 

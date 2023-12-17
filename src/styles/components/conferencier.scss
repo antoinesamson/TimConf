@@ -9,6 +9,11 @@
         padding: 86px 0;
         position: relative;
         top: -90px;
+
+        @media screen and (max-width: $breakpoint-sm) {
+            flex-direction: column;
+            gap: 0;
+          }
     }
 }
 
@@ -18,6 +23,12 @@
     padding: 45px 30px;
     position: relative;
     top: -90px;
+    
+    @media screen and (max-width: $breakpoint-md) {
+
+        top: 0;
+      }
+    
 }
 
 .card-conference {
@@ -45,10 +56,21 @@
     grid-column-start: 3;
     padding: 50px 0;
 
+    @media screen and (max-width: $breakpoint-md) {
+        padding: 0;
+        text-align: start;
+        align-items: center;
+      }
+
     .sociaux-conferencier {
         display: flex;
         justify-content: center;
         gap: 16px;
+        width: 100%;
+
+        @media screen and (max-width: $breakpoint-md) {
+            justify-content: start;
+          }
     }
 
     .photos-conferencier {
@@ -82,6 +104,19 @@
             grid-column-start: 2;
             grid-column-end: 5;
         }
+
+        @media screen and (max-width: $breakpoint-md) {
+
+        .column3{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .column4{
+            grid-column-start: 3;
+            grid-column-end: 5;
+        }
+      }
 
     }
 }

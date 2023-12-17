@@ -31,15 +31,19 @@
     
     @media screen and (max-width: $breakpoint-sm) {
         height: 554px;
+        
       }
     
     
     .swiper-slide{
         height: 698px!important;
         width: #{typo(370px, 705px, $breakpoint-sm, $breakpoint-lg)}!important;
-        position: relative;
         
-    }
+        }
+        
+    
+
+
 
     .media-conferencier{
             height: #{typo(290px, 554px)};
@@ -50,6 +54,7 @@
             height: 100%;
             width: 100%;
             object-fit: cover;
+            border-radius: 0;
     }
 
     .card-conferencier{

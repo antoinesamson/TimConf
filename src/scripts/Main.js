@@ -8,10 +8,14 @@ class Main {
 
   init() {
     Icons.load();
+    var button = document.querySelector('.js-toggle');
+    button.addEventListener('click', this.onOpenNav());
 
     this.initSwiperSponsors();
     this.initSwiperEvenements();
     this.initSwiperAutresConferenciers();
+
+    this.onOpenNav();
   }
 
   initSwiperSponsors() {
@@ -65,8 +69,15 @@ initSwiperAutresConferenciers() {
   }
 }
 
+onOpenNav() {
+
+ document.documentElement.classList.toggle('.nav-is.active');
 
 }
+
+}
+
+
 
 
 new Main();

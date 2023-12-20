@@ -80,8 +80,14 @@ height: 625px;
             bottom: 0;
             right: 0;
 
+
             &:hover{
-                text-decoration: underline;
+                h3{
+
+                    color: var(--color-bg-secondary);
+                }
+                    color: var(--color-bg-secondary);
+
             }
 
             @media screen and (max-width: $breakpoint-sm) {

@@ -26,14 +26,23 @@ class Main {
       slidesPerView: 4,
       spaceBetween: 64,
       loop: true,
+      autoplay: {
+        delay: 2000,
+      }
     });
   }
 
 initSwiperEvenements() {
   const target = document.querySelector('.js-swiper-evenements');
   const swiper = new Swiper(document.querySelector('.js-swiper-evenements'),{
+    loop: true,
     pagination: {
+      
         el: target.querySelector('.pagination-evenements'),
+      },
+
+      autoplay: {
+        delay: 10000,
       },
   });
 
@@ -46,8 +55,13 @@ initSwiperAutresConferenciers() {
     {
       slidesPerView: 1,
       spaceBetween: 0,
+      loop: true,
       pagination: {
         el: target.querySelector('.pagination-conferenciers'),
+      },
+
+      autoplay: {
+        delay: 5000,
       },
         breakpoints: {
           768: {

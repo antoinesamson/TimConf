@@ -4,11 +4,13 @@
    ========================================================================== */
 
 a {
+    cursor: pointer;
     color: var(--color-white);
     text-decoration: none;
     font-family: var(--font-primary);
     font-size: #{typo(16px, 16px)};
     transition: all 0.3s ease-out;
+    
     &:hover {
         text-decoration: none;
     }

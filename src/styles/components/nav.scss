@@ -19,6 +19,10 @@ nav {
         justify-content: space-between;
         padding: 0;
         gap: 80px;
+
+        li:not(.responsive-active){
+           position: absolute;
+        } 
     } 
     }
     
@@ -34,8 +38,7 @@ nav {
 } 
 
 .menu-close{
-background-color: transparent;
-border: none;
+margin-right: 5px;
 text-align: right;
 width: 100%;
 
@@ -63,6 +66,7 @@ h3{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        height: 100%;
     }
      
     

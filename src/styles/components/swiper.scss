@@ -9,6 +9,8 @@
     }
 }
 
+
+
 .shader{
     height: 113px;
     width: #{typo(50px, 200px)};
@@ -25,18 +27,23 @@
     right: 0;
 }
 
+.swiper-evenements{
+    height: 700px;
+    img{
+         height: 100%;
+         width: 100%;
+         object-fit: cover;
+    }
+}
 
 .swiper-conferenciers{
     height: 698px;
     
-    @media screen and (max-width: $breakpoint-sm) {
-        height: 554px;
-        
-      }
+
     
     
     .swiper-slide{
-        height: 698px!important;
+
         width: #{typo(370px, 705px, $breakpoint-sm, $breakpoint-lg)}!important;
         
         }
@@ -57,7 +64,7 @@
             border-radius: 0;
     }
 
-    .card-conferencier{
+    .card-autres-conferencier{
             position: relative;
             display: flex;
             flex-direction: column;
@@ -82,7 +89,7 @@
             }
 
             @media screen and (max-width: $breakpoint-sm) {
-                position: initial;
+
                 justify-content: flex-start;
               }
             
@@ -95,15 +102,7 @@
     }  
 }
 
-.swiper-evenements{
-    height: 700px;
 
-    .img{
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-    }
-}
 
 
 

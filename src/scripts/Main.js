@@ -8,14 +8,16 @@ class Main {
 
   init() {
     Icons.load();
-    var button = document.querySelector('.js-toggle');
-    button.addEventListener('click', this.onOpenNav());
+    const openbutton = document.querySelector('.js-toggle');
+    openbutton.addEventListener('click', this.onOpenNav);
+    const closebutton = document.querySelector('.js-remove');
+    closebutton.addEventListener('click', this.onCloseNav);
 
     this.initSwiperSponsors();
     this.initSwiperEvenements();
     this.initSwiperAutresConferenciers();
 
-    this.onOpenNav();
+    
   }
 
   initSwiperSponsors() {
@@ -49,13 +51,10 @@ initSwiperAutresConferenciers() {
     document.querySelector('.js-swiper-conferenciers'),
     {
       slidesPerView: 1,
-      spaceBetween: 0,
+      spaceBetween: 30,
       loop: true,
       breakpoints: {
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 30
-        }
+
       }
     }
   );
@@ -70,12 +69,21 @@ initSwiperAutresConferenciers() {
 }
 
 onOpenNav() {
-
- document.documentElement.classList.toggle('.nav-is.active');
-
-}
+var html = document.documentElement;
+ html.classList.add('nav-is-active');
 
 }
+
+onCloseNav() {
+  var html = document.documentElement;
+  html.classList.remove('nav-is-active');
+ 
+ }
+}
+
+
+ 
+ 
 
 
 

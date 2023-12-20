@@ -28,7 +28,11 @@
 }
 
 .swiper-evenements{
-    height: 700px;
+height: 625px;
+
+.swiper-wrapper{
+    height: 554px;
+}
     img{
          height: 100%;
          width: 100%;
@@ -37,25 +41,16 @@
 }
 
 .swiper-conferenciers{
-    height: 698px;
-    
+height: 625px;
 
-    
-    
-    .swiper-slide{
-
-        width: #{typo(370px, 705px, $breakpoint-sm, $breakpoint-lg)}!important;
-        
-        }
-        
-    
-
-
-
+.swiper-wrapper{
+    height: 554px;
+}
     .media-conferencier{
-            height: #{typo(290px, 554px)};
-            width: #{typo(375px, 705px, $breakpoint-sm, $breakpoint-lg)};
-    }
+        height: 100%;
+        width: 100%;
+}
+
 
     img{
             height: 100%;
@@ -64,23 +59,24 @@
             border-radius: 0;
     }
 
-    .card-autres-conferencier{
+    .card-autre-conferencier{
             position: relative;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
+            height: 100%;
+            width: #{typo(375px, 705px, $breakpoint-sm, $breakpoint-lg)};
     }
         
     .hover-autre-conferencier{
-
+            background-color: var(--color-bg-primary);
             padding: 20px;
             position: absolute;
             display: flex;
             align-items: center;
-            background-color: var(--color-bg-primary);
             height: 100px;
-            width: #{typo(250px, 390px)};
+            width: #{typo(200px, 300px, $breakpoint-sm, $breakpoint-md)};
             bottom: 0;
             right: 0;
 
@@ -90,7 +86,8 @@
 
             @media screen and (max-width: $breakpoint-sm) {
 
-                justify-content: flex-start;
+                position: initial;
+
               }
             
             .card-conferencier-content {

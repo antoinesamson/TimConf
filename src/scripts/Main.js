@@ -31,18 +31,12 @@ class Main {
 
 initSwiperEvenements() {
   const target = document.querySelector('.js-swiper-evenements');
-  const swiper = new Swiper(
-    document.querySelector('.js-swiper-evenements'),
-    {}
-  );
-
-  if (target) {
-    const swiper = new Swiper(target, {
-      pagination: {
+  const swiper = new Swiper(document.querySelector('.js-swiper-evenements'),{
+    pagination: {
         el: target.querySelector('.pagination-evenements'),
       },
-    });
-  }
+  });
+
 }
 
 initSwiperAutresConferenciers() {
@@ -51,21 +45,21 @@ initSwiperAutresConferenciers() {
     document.querySelector('.js-swiper-conferenciers'),
     {
       slidesPerView: 1,
-      spaceBetween: 30,
-      loop: true,
-      breakpoints: {
-
+      spaceBetween: 0,
+      pagination: {
+        el: target.querySelector('.pagination-conferenciers'),
+      },
+        breakpoints: {
+          768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+          
+        }
+        
       }
     }
   );
 
-  if (target) {
-    const swiper = new Swiper(target, {
-      pagination: {
-        el: target.querySelector('.pagination-conferenciers'),
-      },
-    });
-  }
 }
 
 onOpenNav() {

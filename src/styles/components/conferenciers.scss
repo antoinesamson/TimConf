@@ -94,6 +94,10 @@
                 position: static;
 
             }
+
+            &:hover {
+            text-decoration: underline;
+        }
           }
     }
 
